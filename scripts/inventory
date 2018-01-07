@@ -1,0 +1,30 @@
+[master]
+
+kube-master-node-2
+kube-master-node-1
+kube-master-node-0
+
+
+[node]
+
+kube-app-node-4
+kube-app-node-1
+kube-app-node-2
+kube-app-node-0
+kube-app-node-3
+
+
+[kube-cluster:children]
+
+master
+node
+
+
+[all:vars]
+
+ansible_connection = ssh
+
+ansible_ssh_user = centos
+
+
+

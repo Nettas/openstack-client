@@ -1,0 +1,43 @@
+resource "null_resource" "provision_master_node" {
+  # Changes to any instance of the cluster requires re-provisioning
+  
+  count = "${var.num_master_nodes}"
+
+  # Bootstrap script can run on any instance of the cluster
+  # So we just choose the first in this case
+  connection {
+    user = "centos"
+    private_key = "${file("~/.ssh/id_rsa")}"
+    host = "${element(openstack_networking_floatingip_v2.kube-master-node-floatip.*.address, count.index)}"
+  }
+
+  provisioner "remote-exec" {
+    # Bootstrap script called with private_ip of each node in the clutser
+    inline = [
+      "sudo yum install -y epel-release",
+      "sudo yum install -y git ansible sshpass python-netaddr openssl-devel",
+    ]
+   }
+  }
+
+ resource "null_resource" "provision_app_node" {
+  # Changes to any instance of the cluster requires re-provisioning
+  
+  count = "${var.num_app_nodes}"
+
+  # Bootstrap script can run on any instance of the cluster
+  # So we just choose the first in this case
+  connection {
+    user = "centos"
+    private_key = "${file("~/.ssh/id_rsa")}"
+    host = "${element(openstack_networking_floatingip_v2.kube-app-node-floatip.*.address, count.index)}"
+  }
+
+  provisioner "remote-exec" {
+    # Bootstrap script called with private_ip of each node in the clutser
+    inline = [
+      "sudo yum install -y epel-release",
+      "sudo yum install -y git ansible sshpass python-netaddr openssl-devel",
+    ]
+   }
+  } 
