@@ -43,7 +43,7 @@ resource "openstack_networking_subnet_v2" "subnet_1" {
 
 resource "openstack_networking_router_v2" "router_1" {
   name             = "my_router"
-  external_gateway = "dfcc8284-42e7-4eeb-8593-1a650e1073e0"
+  external_gateway = "c27035d5-5f05-4c36-a0ce-971dea65535c"
 }
 
 resource "openstack_networking_router_interface_v2" "router_interface_1" {
@@ -88,17 +88,15 @@ resource "openstack_compute_floatingip_associate_v2" "kube-app-node-floatip" {
 
 
 
-resource "openstack_blockstorage_volume_v1" "app-node-docker-vol" {
+resource "openstack_blockstorage_volume_v2" "app-node-docker-vol" {
   count = "${var.num_app_nodes}"
-
   name = "${format("app-node-docker-vol-%d", count.index)}"
   size = 75
 }
 
 
-resource "openstack_blockstorage_volume_v1" "master-node-docker-vol" {
+resource "openstack_blockstorage_volume_v2" "master-node-docker-vol" {
   count = "${var.num_master_nodes}"
-
   name = "${format("master-node-docker-vol-%d", count.index)}"
   size = 75
 }
@@ -129,7 +127,9 @@ resource "openstack_compute_instance_v2" "kube-app-node" {
 
 resource "openstack_compute_volume_attach_v2" "app-node-docker-vol" {
   instance_id = "${element(openstack_compute_instance_v2.kube-app-node.*.id, count.index)}"
-  volume_id   = "${element(openstack_blockstorage_volume_v1.app-node-docker-vol.*.id, count.index)}"
+  volume_id   = "${element(openstack_blockstorage_volume_v2.app-node-docker-vol.*.id, count.index)}"
+  region = "RegionOne"
+  
 }
 
 
@@ -157,5 +157,6 @@ resource "openstack_compute_instance_v2" "kube-master-node" {
 
 resource "openstack_compute_volume_attach_v2" "master-node-docker-vol" {
   instance_id = "${element(openstack_compute_instance_v2.kube-master-node.*.id, count.index)}"
-  volume_id   = "${element(openstack_blockstorage_volume_v1.master-node-docker-vol.*.id, count.index)}"
+  volume_id   = "${element(openstack_blockstorage_volume_v2.master-node-docker-vol.*.id, count.index)}"
+  region = "RegionOne"
 }
