@@ -23,7 +23,7 @@ CONN = connection.Connection(**AUTH_ARGS)
 def list_servers(CONN):
     print("List Servers:")
     ho = open('hosts', 'w+')
-    ah = open('inventory','w+')
+    ah = open('/opt/scripts/kubespray/inventory/inventory','w+')
     ho.write("127.0.0.1       localhost\n");
     config = configparser.RawConfigParser()
     config.add_section('master')
@@ -56,11 +56,11 @@ def list_servers(CONN):
     config.set('all:vars',"ansible_ssh_user","centos")
 
 
-    with open('inventory', 'w+') as configfile:
+    with open('/opt/scripts/kubespray/inventory/inventory', 'w+') as configfile:
       config.write(configfile)
 
     
-    for line in fileinput.FileInput("inventory",inplace=1):
+    for line in fileinput.FileInput("/opt/scripts/kubespray/inventory/inventory",inplace=1):
       line=line.replace(' = None\n', '')
       print (line)
    

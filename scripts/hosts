@@ -1,9 +1,1 @@
 127.0.0.1       localhost
-192.168.1.59    kube-app-node-4
-192.168.1.79    kube-app-node-1
-192.168.1.99    kube-master-node-2
-192.168.1.90    kube-app-node-2
-192.168.1.94    kube-app-node-0
-192.168.1.91    kube-master-node-1
-192.168.1.89    kube-app-node-3
-192.168.1.84    kube-master-node-0
