@@ -1,0 +1,172 @@
+{
+    "OSEv3": {
+        "hosts": [
+            "lb-0.openshift.jyiii.internal", 
+            "app-node-2.openshift.jyiii.internal", 
+            "infra-node-0.openshift.jyiii.internal", 
+            "app-node-1.openshift.jyiii.internal", 
+            "master-2.openshift.jyiii.internal", 
+            "master-0.openshift.jyiii.internal", 
+            "app-node-0.openshift.jyiii.internal", 
+            "infra-node-1.openshift.jyiii.internal", 
+            "master-1.openshift.jyiii.internal"
+        ]
+    }, 
+    "_meta": {
+        "hostvars": {
+            "app-node-0.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.79", 
+                "openshift_node_labels": "{\"region\": \"primary\", \"autoscaling\": \"app\"}", 
+                "private_v4": "192.168.99.11", 
+                "public_v4": "192.168.1.79"
+            }, 
+            "app-node-1.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.53", 
+                "openshift_node_labels": "{\"region\": \"primary\", \"autoscaling\": \"app\"}", 
+                "private_v4": "192.168.99.6", 
+                "public_v4": "192.168.1.53"
+            }, 
+            "app-node-2.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.84", 
+                "openshift_node_labels": "{\"region\": \"primary\", \"autoscaling\": \"app\"}", 
+                "private_v4": "192.168.99.13", 
+                "public_v4": "192.168.1.84"
+            }, 
+            "dns-0.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.51", 
+                "openshift_node_labels": "{\"region\": \"default\"}", 
+                "private_v4": "192.168.99.10", 
+                "public_v4": "192.168.1.51"
+            }, 
+            "infra-node-0.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.57", 
+                "openshift_node_labels": "{\"region\": \"infra\"}", 
+                "private_v4": "192.168.99.12", 
+                "public_v4": "192.168.1.57"
+            }, 
+            "infra-node-1.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.78", 
+                "openshift_node_labels": "{\"region\": \"infra\"}", 
+                "private_v4": "192.168.99.7", 
+                "public_v4": "192.168.1.78"
+            }, 
+            "lb-0.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.70", 
+                "openshift_node_labels": "{\"region\": \"default\"}", 
+                "private_v4": "192.168.99.4", 
+                "public_v4": "192.168.1.70"
+            }, 
+            "master-0.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.74", 
+                "openshift_node_labels": "{\"region\": \"default\"}", 
+                "private_v4": "192.168.99.8", 
+                "public_v4": "192.168.1.74"
+            }, 
+            "master-1.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.63", 
+                "openshift_node_labels": "{\"region\": \"default\"}", 
+                "private_v4": "192.168.99.16", 
+                "public_v4": "192.168.1.63"
+            }, 
+            "master-2.openshift.jyiii.internal": {
+                "ansible_host": "192.168.1.82", 
+                "openshift_node_labels": "{\"region\": \"default\"}", 
+                "private_v4": "192.168.99.19", 
+                "public_v4": "192.168.1.82"
+            }
+        }
+    }, 
+    "app": {
+        "hosts": [
+            "app-node-2.openshift.jyiii.internal", 
+            "app-node-0.openshift.jyiii.internal", 
+            "app-node-1.openshift.jyiii.internal"
+        ]
+    }, 
+    "cluster_hosts": {
+        "hosts": [
+            "master-2.openshift.jyiii.internal", 
+            "app-node-2.openshift.jyiii.internal", 
+            "app-node-0.openshift.jyiii.internal", 
+            "lb-0.openshift.jyiii.internal", 
+            "infra-node-1.openshift.jyiii.internal", 
+            "master-1.openshift.jyiii.internal", 
+            "master-0.openshift.jyiii.internal", 
+            "app-node-1.openshift.jyiii.internal", 
+            "infra-node-0.openshift.jyiii.internal", 
+            "dns-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "dns": {
+        "hosts": [
+            "dns-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "dns.openshift.jyiii.internal": {
+        "hosts": [
+            "dns-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "etcd": {
+        "hosts": [
+            "master-2.openshift.jyiii.internal", 
+            "master-1.openshift.jyiii.internal", 
+            "master-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "infra.openshift.jyiii.internal": {
+        "hosts": [
+            "infra-node-1.openshift.jyiii.internal", 
+            "infra-node-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "infra_hosts": {
+        "hosts": [
+            "infra-node-1.openshift.jyiii.internal", 
+            "infra-node-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "lb": {
+        "hosts": [
+            "lb-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "lb.openshift.jyiii.internal": {
+        "hosts": [
+            "lb-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "masters": {
+        "hosts": [
+            "master-2.openshift.jyiii.internal", 
+            "master-1.openshift.jyiii.internal", 
+            "master-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "masters.openshift.jyiii.internal": {
+        "hosts": [
+            "master-2.openshift.jyiii.internal", 
+            "master-1.openshift.jyiii.internal", 
+            "master-0.openshift.jyiii.internal"
+        ]
+    }, 
+    "nodes": {
+        "hosts": [
+            "app-node-2.openshift.jyiii.internal", 
+            "infra-node-0.openshift.jyiii.internal", 
+            "app-node-1.openshift.jyiii.internal", 
+            "master-2.openshift.jyiii.internal", 
+            "infra-node-1.openshift.jyiii.internal", 
+            "app-node-0.openshift.jyiii.internal", 
+            "master-0.openshift.jyiii.internal", 
+            "master-1.openshift.jyiii.internal"
+        ]
+    }, 
+    "nodes.openshift.jyiii.internal": {
+        "hosts": [
+            "app-node-2.openshift.jyiii.internal", 
+            "app-node-0.openshift.jyiii.internal", 
+            "app-node-1.openshift.jyiii.internal"
+        ]
+    }
+}

@@ -1,3 +1,25 @@
 [submodule "scripts/kubespray"]
 	path = scripts/kubespray
 	url = https://github.com/kubernetes-incubator/kubespray.git
+[submodule "scripts/ansible/openshift-ansible-contrib"]
+	path = scripts/ansible/openshift-ansible-contrib
+	url = https://github.com/openshift/openshift-ansible-contrib.git
+[submodule "ansible/openshift-ansible"]
+	path = ansible/openshift-ansible
+	url = https://github.com/openshift/openshift-ansible.git
+[submodule "scripts/scripts/openshift-ansible"]
+	path = scripts/scripts/openshift-ansible
+	url = https://github.com/openshift/openshift-ansible.git
+[submodule "scripts/openshift-ansible"]
+	path = scripts/openshift-ansible
+	url = https://github.com/openshift/openshift-ansible.git
+[submodule "scripts/-b"]
+	path = scripts/-b
+	url = https://github.com/openshift/openshift-ansible.git
+[submodule "scripts/--force"]
+	path = scripts/--force
+	url = https://github.com/openshift/openshift-ansible.git
+	branch = release-3.7
+[submodule "scripts/openshift-ansible-contrib"]
+	path = scripts/openshift-ansible-contrib
+	url = https://github.com/openshift/openshift-ansible-contrib.git

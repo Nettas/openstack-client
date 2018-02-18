@@ -11,17 +11,9 @@ ca-certificates \
 git \
 qemu-utils
 
-
-
-
-RUN rm /usr/local/bin/python
-RUN ln -s /usr/bin/python2.7 /usr/local/bin/python 
-
 RUN pip install python-openstackclient
 RUN pip install ansible
 RUN pip install shade
-RUN pip install dnspython
-
 RUN wget https://releases.hashicorp.com/terraform/0.11.2/terraform_0.11.2_linux_amd64.zip -O /tmp/terraform.zip
 
 RUN unzip /tmp/terraform.zip -d /usr/local/bin/

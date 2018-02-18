@@ -1,0 +1,401 @@
+{
+    "ansible_apparmor": {
+        "status": "disabled"
+    }, 
+    "ansible_architecture": "x86_64", 
+    "ansible_bios_date": "11/10/2014", 
+    "ansible_bios_version": "9ECN33WW(V1.16)", 
+    "ansible_cmdline": {
+        "BOOT_IMAGE": "/vmlinuz-4.13.0-32-generic", 
+        "quiet": true, 
+        "ro": true, 
+        "root": "/dev/mapper/ubuntu--vg-root", 
+        "splash": true, 
+        "vt.handoff": "7"
+    }, 
+    "ansible_date_time": {
+        "date": "2018-02-17", 
+        "day": "17", 
+        "epoch": "1518877514", 
+        "hour": "14", 
+        "iso8601": "2018-02-17T14:25:14Z", 
+        "iso8601_basic": "20180217T142514978277", 
+        "iso8601_basic_short": "20180217T142514", 
+        "iso8601_micro": "2018-02-17T14:25:14.978338Z", 
+        "minute": "25", 
+        "month": "02", 
+        "second": "14", 
+        "time": "14:25:14", 
+        "tz": "UTC", 
+        "tz_offset": "+0000", 
+        "weekday": "Saturday", 
+        "weekday_number": "6", 
+        "weeknumber": "07", 
+        "year": "2018"
+    }, 
+    "ansible_devices": {
+        "sda": {
+            "holders": [], 
+            "host": "", 
+            "model": "SAMSUNG MZ7TE256", 
+            "partitions": {
+                "sda1": {
+                    "holders": [], 
+                    "sectors": "1497088", 
+                    "sectorsize": 512, 
+                    "size": "731.00 MB", 
+                    "start": "2048", 
+                    "uuid": null
+                }, 
+                "sda2": {
+                    "holders": [], 
+                    "sectors": "2", 
+                    "sectorsize": 512, 
+                    "size": "1.00 KB", 
+                    "start": "1501182", 
+                    "uuid": null
+                }, 
+                "sda5": {
+                    "holders": [
+                        "sda5_crypt"
+                    ], 
+                    "sectors": "498616320", 
+                    "sectorsize": 512, 
+                    "size": "237.76 GB", 
+                    "start": "1501184", 
+                    "uuid": null
+                }
+            }, 
+            "removable": "0", 
+            "rotational": "0", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "cfq", 
+            "sectors": "500118192", 
+            "sectorsize": "512", 
+            "size": "238.47 GB", 
+            "support_discard": "512", 
+            "vendor": "ATA"
+        }
+    }, 
+    "ansible_distribution": "CentOS", 
+    "ansible_distribution_major_version": "7", 
+    "ansible_distribution_release": "Core", 
+    "ansible_distribution_version": "7.4.1708", 
+    "ansible_dns": {
+        "nameservers": [
+            "8.8.8.8", 
+            "8.8.4.4"
+        ]
+    }, 
+    "ansible_domain": "", 
+    "ansible_effective_group_id": 0, 
+    "ansible_effective_user_id": 0, 
+    "ansible_env": {
+        "HOME": "/root", 
+        "HOSTNAME": "30e8402f1f88", 
+        "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
+        "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:", 
+        "OS_AUTH_URL": "http://192.168.1.30:5000/v3", 
+        "OS_IDENTITY_API_VERSION": "3", 
+        "OS_INTERFACE": "public", 
+        "OS_PASSWORD": "rbaiwa", 
+        "OS_PROJECT_DOMAIN_ID": "default", 
+        "OS_PROJECT_ID": "1052f107baaf4d899c9d1771f631cec6", 
+        "OS_PROJECT_NAME": "openshift-3.7", 
+        "OS_REGION_NAME": "RegionOne", 
+        "OS_USERNAME": "admin", 
+        "OS_USER_DOMAIN_NAME": "Default", 
+        "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", 
+        "PWD": "/opt/scripts/openshift-ansible-contrib/playbooks/provisioning/openstack", 
+        "SHLVL": "3", 
+        "TERM": "xterm", 
+        "_": "/usr/bin/python2"
+    }, 
+    "ansible_fips": false, 
+    "ansible_form_factor": "Notebook", 
+    "ansible_fqdn": "30e8402f1f88", 
+    "ansible_gather_subset": [
+        "hardware", 
+        "network", 
+        "virtual"
+    ], 
+    "ansible_hostname": "30e8402f1f88", 
+    "ansible_kernel": "4.13.0-32-generic", 
+    "ansible_machine": "x86_64", 
+    "ansible_memfree_mb": 5107, 
+    "ansible_memory_mb": {
+        "nocache": {
+            "free": 9442, 
+            "used": 6515
+        }, 
+        "real": {
+            "free": 5107, 
+            "total": 15957, 
+            "used": 10850
+        }, 
+        "swap": {
+            "cached": 0, 
+            "free": 16277, 
+            "total": 16299, 
+            "used": 22
+        }
+    }, 
+    "ansible_memtotal_mb": 15957, 
+    "ansible_mounts": [
+        {
+            "device": "/home/rick/.Private", 
+            "fstype": "ecryptfs", 
+            "mount": "/root/.ssh", 
+            "options": "rw,nosuid,nodev,relatime,ecryptfs_fnek_sig=d41dfe6e82d7f62a,ecryptfs_sig=4bcf8d739bd32ff4,ecryptfs_cipher=aes,ecryptfs_key_bytes=16,ecryptfs_unlink_sigs,bind", 
+            "size_available": 99412336640, 
+            "size_total": 233382014976, 
+            "uuid": "N/A"
+        }, 
+        {
+            "device": "/home/rick/.Private", 
+            "fstype": "ecryptfs", 
+            "mount": "/opt/scripts", 
+            "options": "rw,nosuid,nodev,relatime,ecryptfs_fnek_sig=d41dfe6e82d7f62a,ecryptfs_sig=4bcf8d739bd32ff4,ecryptfs_cipher=aes,ecryptfs_key_bytes=16,ecryptfs_unlink_sigs,bind", 
+            "size_available": 99412336640, 
+            "size_total": 233382014976, 
+            "uuid": "N/A"
+        }, 
+        {
+            "device": "/dev/mapper/ubuntu--vg-root", 
+            "fstype": "ext4", 
+            "mount": "/etc/resolv.conf", 
+            "options": "rw,relatime,errors=remount-ro,data=ordered,bind", 
+            "size_available": 99412336640, 
+            "size_total": 233382014976, 
+            "uuid": "N/A"
+        }, 
+        {
+            "device": "/dev/mapper/ubuntu--vg-root", 
+            "fstype": "ext4", 
+            "mount": "/etc/hostname", 
+            "options": "rw,relatime,errors=remount-ro,data=ordered,bind", 
+            "size_available": 99412336640, 
+            "size_total": 233382014976, 
+            "uuid": "N/A"
+        }, 
+        {
+            "device": "/dev/mapper/ubuntu--vg-root", 
+            "fstype": "ext4", 
+            "mount": "/etc/hosts", 
+            "options": "rw,relatime,errors=remount-ro,data=ordered,bind", 
+            "size_available": 99412336640, 
+            "size_total": 233382014976, 
+            "uuid": "N/A"
+        }, 
+        {
+            "device": "/home/rick/.Private", 
+            "fstype": "ecryptfs", 
+            "mount": "/root/.config/openstack/openshift-3.7-openrc.sh", 
+            "options": "rw,nosuid,nodev,relatime,ecryptfs_fnek_sig=d41dfe6e82d7f62a,ecryptfs_sig=4bcf8d739bd32ff4,ecryptfs_cipher=aes,ecryptfs_key_bytes=16,ecryptfs_unlink_sigs,bind", 
+            "size_available": 99412336640, 
+            "size_total": 233382014976, 
+            "uuid": "N/A"
+        }
+    ], 
+    "ansible_nodename": "30e8402f1f88", 
+    "ansible_os_family": "RedHat", 
+    "ansible_pkg_mgr": "yum", 
+    "ansible_processor": [
+        "GenuineIntel", 
+        "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+        "GenuineIntel", 
+        "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+        "GenuineIntel", 
+        "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+        "GenuineIntel", 
+        "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+        "GenuineIntel", 
+        "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+        "GenuineIntel", 
+        "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+        "GenuineIntel", 
+        "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz", 
+        "GenuineIntel", 
+        "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz"
+    ], 
+    "ansible_processor_cores": 4, 
+    "ansible_processor_count": 1, 
+    "ansible_processor_threads_per_core": 2, 
+    "ansible_processor_vcpus": 8, 
+    "ansible_product_name": "20349", 
+    "ansible_product_serial": "3592876602427", 
+    "ansible_product_uuid": "272B245E-EB81-E411-A26A-F0761C58E277", 
+    "ansible_product_version": "Lenovo Y50-70 Touch", 
+    "ansible_python": {
+        "executable": "/usr/bin/python2", 
+        "has_sslcontext": true, 
+        "type": "CPython", 
+        "version": {
+            "major": 2, 
+            "micro": 5, 
+            "minor": 7, 
+            "releaselevel": "final", 
+            "serial": 0
+        }, 
+        "version_info": [
+            2, 
+            7, 
+            5, 
+            "final", 
+            0
+        ]
+    }, 
+    "ansible_python_version": "2.7.5", 
+    "ansible_real_group_id": 0, 
+    "ansible_real_user_id": 0, 
+    "ansible_selinux": false, 
+    "ansible_service_mgr": "sysvinit", 
+    "ansible_swapfree_mb": 16277, 
+    "ansible_swaptotal_mb": 16299, 
+    "ansible_system": "Linux", 
+    "ansible_system_capabilities": [
+        "cap_chown", 
+        "cap_dac_override", 
+        "cap_fowner", 
+        "cap_fsetid", 
+        "cap_kill", 
+        "cap_setgid", 
+        "cap_setuid", 
+        "cap_setpcap", 
+        "cap_net_bind_service", 
+        "cap_net_raw", 
+        "cap_sys_chroot", 
+        "cap_mknod", 
+        "cap_audit_write", 
+        "cap_setfcap+eip"
+    ], 
+    "ansible_system_capabilities_enforced": "True", 
+    "ansible_system_vendor": "LENOVO", 
+    "ansible_uptime_seconds": 628082, 
+    "ansible_user_dir": "/root", 
+    "ansible_user_gecos": "root", 
+    "ansible_user_gid": 0, 
+    "ansible_user_id": "root", 
+    "ansible_user_shell": "/bin/bash", 
+    "ansible_user_uid": 0, 
+    "ansible_userspace_architecture": "x86_64", 
+    "ansible_userspace_bits": "64", 
+    "ansible_virtualization_role": "guest", 
+    "ansible_virtualization_type": "docker", 
+    "module_setup": true, 
+    "openstack_flavors": [
+        {
+            "OS-FLV-DISABLED:disabled": false, 
+            "OS-FLV-EXT-DATA:ephemeral": 0, 
+            "disk": 160, 
+            "ephemeral": 0, 
+            "extra_specs": {}, 
+            "id": "5", 
+            "is_disabled": false, 
+            "is_public": true, 
+            "location": {
+                "cloud": "envvars", 
+                "project": {
+                    "domain_id": "default", 
+                    "domain_name": null, 
+                    "id": "1052f107baaf4d899c9d1771f631cec6", 
+                    "name": "openshift-3.7"
+                }, 
+                "region_name": "RegionOne", 
+                "zone": null
+            }, 
+            "name": "m1.xlarge", 
+            "os-flavor-access:is_public": true, 
+            "properties": {
+                "OS-FLV-DISABLED:disabled": false, 
+                "OS-FLV-EXT-DATA:ephemeral": 0, 
+                "os-flavor-access:is_public": true
+            }, 
+            "ram": 16384, 
+            "rxtx_factor": 1.0, 
+            "swap": 0, 
+            "vcpus": 8
+        }
+    ], 
+    "openstack_image": {
+        "checksum": "b4548edf0bc476c50c083fb88717d92f", 
+        "container_format": "bare", 
+        "created": "2018-01-15T20:46:42Z", 
+        "created_at": "2018-01-15T20:46:42Z", 
+        "description": "CentOS-7.4-1801", 
+        "direct_url": null, 
+        "disk_format": "qcow2", 
+        "file": "/v2/images/d08412ca-111c-4897-86b0-0b5f56789a5f/file", 
+        "id": "d08412ca-111c-4897-86b0-0b5f56789a5f", 
+        "is_protected": false, 
+        "is_public": true, 
+        "location": {
+            "cloud": "envvars", 
+            "project": {
+                "domain_id": null, 
+                "domain_name": null, 
+                "id": "1b38e02e92f545e3b36182d9ade914fe", 
+                "name": null
+            }, 
+            "region_name": "RegionOne", 
+            "zone": null
+        }, 
+        "locations": [], 
+        "metadata": {
+            "description": "CentOS-7.4-1801", 
+            "schema": "/v2/schemas/image", 
+            "self": "/v2/images/d08412ca-111c-4897-86b0-0b5f56789a5f"
+        }, 
+        "minDisk": 5, 
+        "minRam": 1024, 
+        "min_disk": 5, 
+        "min_ram": 1024, 
+        "name": "CentOS-7.4", 
+        "owner": "1b38e02e92f545e3b36182d9ade914fe", 
+        "properties": {
+            "description": "CentOS-7.4-1801", 
+            "schema": "/v2/schemas/image", 
+            "self": "/v2/images/d08412ca-111c-4897-86b0-0b5f56789a5f"
+        }, 
+        "protected": false, 
+        "schema": "/v2/schemas/image", 
+        "self": "/v2/images/d08412ca-111c-4897-86b0-0b5f56789a5f", 
+        "size": 877985792, 
+        "status": "active", 
+        "tags": [], 
+        "updated": "2018-01-16T19:33:23Z", 
+        "updated_at": "2018-01-16T19:33:23Z", 
+        "virtual_size": 0, 
+        "visibility": "public"
+    }, 
+    "openstack_networks": [
+        {
+            "admin_state_up": true, 
+            "availability_zone_hints": [], 
+            "availability_zones": [
+                "nova"
+            ], 
+            "created_at": "2018-01-15T20:39:44Z", 
+            "description": "", 
+            "id": "c27035d5-5f05-4c36-a0ce-971dea65535c", 
+            "ipv4_address_scope": null, 
+            "ipv6_address_scope": null, 
+            "is_default": false, 
+            "mtu": 1500, 
+            "name": "external_network", 
+            "port_security_enabled": true, 
+            "project_id": "1b38e02e92f545e3b36182d9ade914fe", 
+            "revision_number": 5, 
+            "router:external": true, 
+            "shared": false, 
+            "status": "ACTIVE", 
+            "subnets": [
+                "fcf68db1-5dde-4768-9720-db3d73c3ed01"
+            ], 
+            "tags": [], 
+            "tenant_id": "1b38e02e92f545e3b36182d9ade914fe", 
+            "updated_at": "2018-01-16T01:55:37Z"
+        }
+    ]
+}
