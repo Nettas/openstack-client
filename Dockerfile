@@ -9,13 +9,10 @@ qemu-utils \
 unzip \
 ca-certificates \
 git \
-qemu-utils
-
-
-
-
-RUN rm /usr/local/bin/python
-RUN ln -s /usr/bin/python2.7 /usr/local/bin/python 
+qemu-utils \
+python-setuptools \ 
+python-dev \
+build-essential
 
 RUN pip install python-openstackclient
 RUN pip install ansible
@@ -27,13 +24,13 @@ RUN wget https://releases.hashicorp.com/terraform/0.11.2/terraform_0.11.2_linux_
 RUN unzip /tmp/terraform.zip -d /usr/local/bin/
 RUN chmod a+x /usr/local/bin/terraform
 
-RUN useradd --create-home -s /bin/bash demouser -p demouser
+RUN useradd --create-home -s /bin/bash openstack-user -p openstack-user
 
 VOLUME ~/.ssh/
 VOLUME /opt/scripts
 
 WORKDIR /opt/scripts
-USER demouser
+USER openstack-user
 
 
 
